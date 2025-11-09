@@ -22,7 +22,7 @@ import Qrcheckerdetails from './pages/Qrcheckerdetails';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"><h1>This is APP js</h1>
       <Router>
         <Routes>
           <Route index element={<Landing />} />
