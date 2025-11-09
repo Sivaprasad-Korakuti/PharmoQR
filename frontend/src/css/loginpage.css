@@ -1,0 +1,127 @@
+.auth-login-container {
+    font-size: 11pt;
+    background: linear-gradient(to bottom, #31e7f4 10%, #ffffff 60%);
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@keyframes fadeInpage {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOnce {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.auth-login-form {
+    box-shadow: inset 2px 2px 8px rgba(109, 107, 107, 0.6), inset 2px 2px 6px rgba(100, 98, 98, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeInOnce 3s ease-in-out forwards;
+}
+
+.logo {
+    margin: 20px;
+    padding-left: 10px;
+    align-items: left;
+    width: 5.5rem;
+}
+
+.auth-login-form input {
+    box-shadow: inset 2px 2px 6px rgba(109, 107, 107, 0.6), inset 2px 2px 6px rgba(100, 98, 98, 0.2);
+    width: 90%;
+    padding: 0.4rem;
+    margin: 0.4rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.forgot-wrapper {
+    display: flex;
+    justify-content: flex-start;
+
+    width: 90%;
+
+    margin: 5px auto -20px auto;
+
+}
+
+.forgot-link {
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form h2 {
+    padding: 0px;
+    color: black;
+    font-size: 18pt;
+}
+
+.login-btn {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #0fb91d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #059505;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.g-btn,
+.f-btn,
+.x-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.g-btn:hover,
+.f-btn:hover,
+.x-btn:hover {
+    transform: scale(1.1);
+}
+
+.social-buttons img {
+    width: 35px;
+    height: 35px;
+}

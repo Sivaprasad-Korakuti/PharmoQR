@@ -1,0 +1,235 @@
+.generateqr-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #31e7f4 10%, #ffffff 60%);
+    justify-content: space-evenly;
+}
+
+.qr-img {
+    width: 400px;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    margin-top: 25%;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: #2f2d2d;
+    width: 400px;
+    box-shadow: inset 2px 2px 6px rgba(230, 230, 230, 0.9), 3px 3px 6px rgba(98, 98, 98, 0.6);
+    border-radius: 10px;
+}
+
+.product-details select {
+    color: #383838;
+}
+
+
+.product-details label {
+    color: #2f2d2d;
+    padding: 4px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 6px rgba(230, 230, 230, 0.9), inset 3px 3px 6px rgba(98, 98, 98, 0.6);
+}
+
+.generate-btn {
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.sub-btn {
+    text-align: right;
+}
+
+.generate-btn {
+    font-size: 16pt;
+    padding: 5px 10px;
+    border: none;
+    color: #484848;
+    box-shadow: inset 2px 2px 6px rgba(230, 230, 230, 0.9), inset 3px 3px 6px rgba(98, 98, 98, 0.6);
+    border-radius: 8px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-10vh) translateX(calc(100vw * var(--direction)));
+        opacity: 0;
+    }
+}
+
+
+
+@media print {
+
+
+    body * {
+        visibility: hidden;
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+    }
+
+
+    @page {
+        margin: 0 !important;
+
+    }
+
+    body,
+    html {
+        background-color: white !important;
+        -webkit-print-color-adjust: exact;
+
+        print-color-adjust: exact;
+        height: 100% !important;
+
+        width: 100% !important;
+
+        overflow: hidden !important;
+
+        display: block !important;
+
+        position: relative !important;
+
+    }
+
+
+
+    .qr-result {
+        visibility: visible !important;
+        position: absolute !important;
+
+        top: 50% !important;
+
+        left: 50% !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        margin: 0 !important;
+
+        padding: 20px !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        background-color: white !important;
+        width: 90% !important;
+
+        max-width: 600px !important;
+
+        display: block !important;
+
+        page-break-after: auto !important;
+
+    }
+
+    .qr-result * {
+        visibility: visible !important;
+
+    }
+
+
+    .qr-actions {
+        display: none !important;
+    }
+
+
+    .qr-section {
+        display: flex !important;
+
+        flex-direction: column !important;
+        align-items: center !important;
+
+        text-align: center !important;
+
+        padding: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        background-color: white !important;
+    }
+
+    .qr-info {
+        font-size: 12pt !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        padding: 0 !important;
+        background-color: white !important;
+    }
+
+    .qr-section p {
+        text-align: center !important;
+    }
+
+
+    svg[viewBox="0 0 256 256"] {
+        width: 150px !important;
+        height: 150px !important;
+        margin: 20px auto !important;
+
+        display: block !important;
+        background-color: white !important;
+    }
+
+
+    img {
+
+        background-color: white !important;
+    }
+}
+
+.generate-qr-whole-container {
+    justify-content: center;
+}
+
+.qr-section {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 25%;
+    padding: 10px 40px;
+    box-shadow: -2px -2px 6px rgb(255, 255, 255), 2px 2px 6px rgba(98, 98, 98, 0.6);
+}
+
+.qr-info {
+    font-size: 14pt;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.qr-actions {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 10px;
+}
+
+.qr-actions button {
+    font-size: 1.3rem;
+    padding: 6px 15px;
+    border: none;
+    background: #31e7f4;
+    border-radius: 8px;
+    box-shadow: -1px -1px 6px rgba(98, 98, 98, 0.8)
+}

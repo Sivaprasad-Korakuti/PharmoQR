@@ -1,0 +1,108 @@
+.consumer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #31e7f4 10%, #ffffff 60%);
+    color: #333;
+    padding: 20px;
+}
+
+.consumer-container h1 {
+    font-size: 36pt;
+    color: #ffffff;
+    text-shadow:
+        2px 2px 0 #a3a1a1,
+        4px 4px 0 #a3a1a1,
+        6px 6px 0 #a3a1a1;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.consumer-container p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drop-area {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    animation: border-rgb-rotate 10s infinite;
+}
+
+@keyframes border-rgb-rotate {
+    0% {
+        border-color: rgb(255, 0, 0);
+    }
+
+    20% {
+        border-color: rgb(255, 136, 0);
+    }
+
+    40% {
+        border-color: rgb(255, 251, 0);
+    }
+
+    60% {
+        border-color: rgb(0, 255, 0);
+    }
+
+
+    80% {
+        border-color: rgb(0, 0, 255);
+    }
+
+    100% {
+        border-color: rgb(242, 0, 255);
+    }
+}
+
+.drop-area:hover {
+    background-color: #f9f9f9;
+}
+
+.drop-area.dragging {
+    border-color: #007bff;
+    background-color: #eaf5ff;
+    filter: blur(2px);
+}
+
+.drop-area p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.file-upload-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.file-upload-label:hover {
+    background-color: #0056b3;
+}
+
+.status-message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #555;
+}
+
+.status-message.error-message {
+    color: #d9534f;
+    font-weight: bold;
+}

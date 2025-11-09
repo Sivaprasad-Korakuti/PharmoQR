@@ -1,0 +1,35 @@
+.qr-btn {
+
+    color: #007bff;
+
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    transition: background-color 0.2s ease;
+}
+
+.qr-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0056b3;
+}
+
+
+.qr-btn.delete-btn {
+    color: #dc3545;
+
+    top: 50px;
+
+
+}
+
+.qr-btn.delete-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #c82333;
+
+}

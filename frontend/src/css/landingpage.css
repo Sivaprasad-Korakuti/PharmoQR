@@ -1,0 +1,66 @@
+.welcome-greet {
+    margin: 0;
+    color: black;
+    padding: 0;
+    font-size: 4rem;
+    animation: fadeIn 4s ease-in forwards, scale 2s ease-in-out forwards;
+
+}
+
+@keyframes fadeInlogo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes trans {
+
+    0%,
+    60% {
+        transform: translate(0) scale(1);
+    }
+
+    100% {
+        transform: translate(-720px, -370px) scale(0.2);
+    }
+}
+
+.pharmologo {
+    width: 60vh;
+    margin: 0;
+    animation: fadeInlogo 3s ease-in forwards, trans 8s ease-in-out forwards, size 7s ease-in-out forwards;
+}
+
+.landingpage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to bottom, #31e7f4 10%, #ffffff 60%);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
