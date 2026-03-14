@@ -16,7 +16,7 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/login', {
+            const res = await axios.post('/api/login', {
                 email,
                 password
             });
@@ -42,7 +42,7 @@ function Login() {
     };
 
     const handleSocialLogin = (provider) => {
-        window.open(`http://localhost:5000/auth/${provider}`, "_self");
+        window.open(`/auth/${provider}`, "_self");
         //alert(`Logging in with ${provider}`);
     };
 
