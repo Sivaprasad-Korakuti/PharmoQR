@@ -22,7 +22,7 @@ import Qrcheckerdetails from './pages/Qrcheckerdetails';
 
 function App() {
   return (
-    <div className="App"><h1>This is APP js</h1>
+    <div className="App">
       <Router>
         <Routes>
           <Route index element={<Landing />} />
@@ -47,6 +47,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+
   );
 }
 
